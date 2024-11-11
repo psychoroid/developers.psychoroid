@@ -1,3 +1,6 @@
 {
-  "working-with-bigint": "Working with BigInt"
+  "handling-webhooks": "Handling Webhooks",
+  "idempotency-keys": "Idempotency Keys",
+  "error-handling": "Error Handling",
+  "security-best-practices": "Security Best Practices"
 }

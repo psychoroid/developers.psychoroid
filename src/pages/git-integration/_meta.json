@@ -1,5 +1,7 @@
 {
   "overview": "Overview",
-  "using-cli":"Collaboration via CLI",
-  "using-gui":"Collaboration via GUI"
+  "best-practices": "Best Practices",
+  "branching-strategy": "Branching Strategy",
+  "code-reviews": "Code Reviews",
+  "versioning": "Versioning"
 }

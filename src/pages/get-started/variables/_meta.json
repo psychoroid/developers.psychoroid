@@ -1,7 +1,6 @@
 {
 	"overview": "Overview",
-	"collection-variables": "Collection Variables",
-	"folder-variables": "Folder Variables",
-	"request-variables": "Request Variables",
-	"runtime-variables": "Runtime Variables"
+	"environment-variables": "Environment Variables",
+	"api-keys": "API Keys",
+	"webhook-secrets": "Webhook Secrets"
 }

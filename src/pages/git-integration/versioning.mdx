@@ -1,0 +1,23 @@
+# Versioning
+
+Versioning your lomi. integration is important for tracking changes and managing releases. We recommend using semantic versioning (SemVer) for your integration.
+
+With SemVer, each version number consists of three parts: `MAJOR.MINOR.PATCH`.
+
+- `MAJOR`: Increment this when you make incompatible API changes.
+- `MINOR`: Increment this when you add functionality in a backwards-compatible manner.
+- `PATCH`: Increment this when you make backwards-compatible bug fixes.
+
+When preparing a new release:
+
+1. **Update the version number**: Increment the appropriate part of the version number based on the changes included in the release.
+
+2. **Create a release branch**: Create a new branch from `develop` with the name `release/X.Y.Z`, where `X.Y.Z` is the new version number.
+
+3. **Finalize the release**: Make any necessary final changes to the release branch, such as updating documentation or fixing last-minute bugs.
+
+4. **Merge the release branch**: Once the release is ready, merge the release branch into both `main` and `develop`.
+
+5. **Tag the release**: Create a new Git tag with the version number (e.g., `v1.2.3`) to mark the release point in your codebase.
+
+By following a consistent versioning scheme and release process, you can make it easier to manage your integration and communicate changes to your team and users. 

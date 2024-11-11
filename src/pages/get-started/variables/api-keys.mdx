@@ -1,0 +1,40 @@
+# API Keys
+
+API keys are used to authenticate your integration with the lomi. API. It's essential to keep your API keys secure and manage them effectively.
+
+## Creating API Keys
+
+To create an API key:
+
+1. Log in to your lomi. account and navigate to the "Settings" page.
+2. Click on the "API Keys" tab.
+3. Click the "Create API Key" button.
+4. Enter a name for your API key and select the appropriate permissions.
+5. Click "Create" to generate your API key.
+
+## Using API Keys
+
+To use your API key, include it in the `Authorization` header of your API requests:
+
+```bash
+Authorization: Bearer YOUR_API_KEY
+```
+
+In your integration code, you can store your API key as an environment variable and reference it using the `{{ENV_VAR_NAME}}` syntax:
+
+```javascript
+const apiKey = '{{LOMI_API_KEY}}';
+const headers = {
+  'Authorization': `Bearer ${apiKey}`,
+  'Content-Type': 'application/json'
+};
+```
+
+## Best Practices
+
+- Keep your API keys secure and never share them with anyone.
+- Regularly rotate your API keys to minimize the risk of unauthorized access.
+- Use environment variables to store your API keys instead of hardcoding them in your integration code.
+- Restrict the permissions of your API keys to the minimum required for your integration to function.
+
+By following these best practices, you can ensure the security and integrity of your lomi. integration. 

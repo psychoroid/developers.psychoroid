@@ -1,136 +1,70 @@
 # lomi. CLI
 
-With lomi. CLI, you can run your API collections with ease using simple command line commands.
+The lomi. CLI allows you to interact with your lomi. account and perform various tasks related to your payment integration setup using simple command-line commands.
 
-This makes it easier to test your APIs in different environments, automate your testing process, and integrate your API tests with your continuous integration and deployment workflows.
+This makes it easier to manage your payment integrations, test your setup in different environments, automate your testing process, and integrate with your continuous integration and deployment workflows.
 
 ## Installation
-To install the lomi. CLI, use the node package manager of your choice, such as NPM:
-```bash copy
-npm install -g @usebruno/cli
-```
 
-## Getting Started
-
-Navigate to the directory where your API collection resides, and run the following command:
+To install the lomi. CLI, use the package manager of your choice, such as NPM:
 
 ```bash copy
-bru run
+npm install -g @lomi/cli
 ```
 
-This will run all the requests in your collection. If you want to run a single request, specify its filename:
+## Authentication
+
+To use the lomi. CLI, you need to authenticate with your lomi. account. You can do this by setting the `LOMI_API_KEY` environment variable to your API key:
 
 ```bash copy
-bru run request.bru
+export LOMI_API_KEY=your_api_key_here
 ```
 
-## Running Requests in a Folder
-To run all the requests within a folder, use:
+Alternatively, you can pass the API key as a command-line argument using the `--api-key` flag:
 
 ```bash copy
-bru run folder
+lomi --api-key your_api_key_here command
 ```
 
-## Using Environments
-If you need to use a specific environment, you can pass it with the --env option:
+## Commands
 
+### `lomi setup`
+
+The `setup` command helps you set up your lomi. integration by guiding you through the process of creating a merchant account, setting up payment methods, and configuring your integration settings.
 
 ```bash copy
-bru run folder --env Local
+lomi setup
 ```
 
-## Passing Environment Variables
-You can pass environment variables directly to your collection with the --env-var option:
+### `lomi test`
 
+The `test` command allows you to test your payment integration by simulating transactions and verifying that your integration is working as expected.
 
 ```bash copy
-bru run folder --env Local --env-var JWT_TOKEN=1234
+lomi test
 ```
 
-## Running a Collection with a CSV File
-If you need to run a collection using data from a CSV file, specify the path to the file with the --csv-file-path option:
+### `lomi transactions`
+
+The `transactions` command allows you to view and manage your transactions. You can list recent transactions, view transaction details, and perform actions such as refunds or captures.
 
 ```bash copy
-bru run folder --csv-file-path /path/to/csv/file.csv
+lomi transactions list
+lomi transactions view <transaction_id>
+lomi transactions refund <transaction_id>
+lomi transactions capture <transaction_id>
 ```
 
-## Outputting Results
-To save the results of your API tests to a file, use the --output option:
+### `lomi webhooks`
 
+The `webhooks` command allows you to manage your webhooks. You can list your registered webhooks, create new webhooks, and delete existing webhooks.
 
 ```bash copy
-bru run folder --output results.json
+lomi webhooks list
+lomi webhooks create --url <webhook_url> --events <comma_separated_events>
+lomi webhooks delete <webhook_id>
 ```
-
-## Generating Reports
-
-lomi. CLI provides built-in support for generating reports in three formats: **JSON**, **JUnit**, and **HTML**. These reports help with analyzing test results and integrating with various CI/CD tools.
-
-You can generate any combination of these reports and even run them simultaneously.
-
-### JSON Report
-
-To generate a report in JSON format, use the `--reporter-json` option:
-
-```bash copy
-bru run request.bru --reporter-json results.json
-```
-
-This will output the test results in a results.json file, which can be useful for further processing or programmatic analysis.
-
-### JUnit Report
-
-To generate a report in JUnit format, use the --reporter-junit option:
-
-```bash copy
-bru run request.bru --reporter-junit results.xml
-```
-
-The results.xml file will be in a format compatible with JUnit, making it ideal for integration with CI/CD pipelines that rely on JUnit reporting.
-
-
-### HTML Report
-
-To generate a human-readable HTML report, use the --reporter-html option:
-
-```bash copy
-bru run request.bru --reporter-html results.html
-```
-
-This will create an results.html file that provides a visual representation of the test outcomes, ideal for quick reviews.
-
-### Running Multiple Reporters Simultaneously
-
-You can generate multiple reports at once by specifying more than one reporter option. For example, to generate JSON, JUnit, and HTML reports simultaneously, run:
-
-```bash copy
-bru run request.bru --reporter-json results.json --reporter-junit results.xml --reporter-html results.html
-```
-
-This command will create three files: results.json, results.xml, and results.html, allowing you to analyze the results in different formats as needed.
-
-
-## Options
-| Option                    | Details                                                                       |
-|---------------------------|-------------------------------------------------------------------------------|
-| -h, --help                | Show help                                                                     |
-| --version                 | Show version number                                                           |
-| -r                        | Indicates a recursive run (default: false)                                    |
-| --cacert [string]         | CA certificate to verify peer against                                         |
-| --env [string]            | Specify environment to run with                                               |
-| --env-var [string]        | Overwrite a single environment variable, multiple usages possible             |
-| -o, --output [string]     | Path to write file results to                                                 |
-| -f, --format [string]     | Format of the file results; available formats are "json" (default) or "junit" |
-| --reporter-json [string]  | Path to generate a JSON report                                                |
-| --reporter-junit [string] | Path to generate a JUnit report                                               |
-| --reporter-html [string]  | Path to generate an HTML report                                               |
-| --insecure                | Allow insecure server connections                                             |
-| --tests-only              | Only run requests that have tests                                             |
-| --bail                    | Stop execution after a failure of a request, test, or assertion               |
-| --csv-file-path           | CSV file to run the collection with                                           |
-
-## Demo
-![bru cli](/screenshots/cli-demo.webp)
 
 ## Support
-If you encounter any issues or have any feedback or suggestions, please raise them on our [GitHub repository](https://github.com/lomiafrica/lomi-docs)
+
+If you encounter any issues or have any questions or feedback, please contact our support team at [support@lomi.africa](mailto:support@lomi.africa) or visit our [documentation](https://docs.lomi.africa) for more information.

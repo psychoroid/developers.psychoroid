@@ -1,73 +1,63 @@
-# Collaboration via CLI
+# Using Git CLI for Collaboration
 
-In the open-source version of lomi.,  Git operations are performed manually using the terminal or tools like VSCode's Git features. 
+When collaborating on your lomi. integration using Git, you can use the command-line interface (CLI) to perform various Git operations. This allows you to manage your integration code and configurations effectively.
 
-This includes:
+## Initializing a Git Repository
 
-- [Initializing a Git repository](#initializing-git-in-bruno-collection)
-- [Adding and committing changes](#adding-and-committing-changes)
-- [Pushing and pulling updates](#pushing-and-pulling-changes)
+To get started, initialize a Git repository in the directory where your integration code and configuration files are stored:
 
-Below is a step-by-step guide on how to use Git with lomi. in the open-source version.
+```bash
+git init
+```
 
-### Initializing Git in a Collection
+## Staging and Committing Changes
 
-To add your collection to version control, you need to initialize a Git repository in the directory where your .bru files are stored using the following steps:
+After making changes to your integration code or configurations, stage the changes using the `git add` command:
 
-1. **Navigate to the lomi. Collection Location:**
+```bash
+git add .
+```
 
-   - Navigate to the location on your PC where you created the lomi. collection, and copy the path. [^1]
+Then, commit the changes with a descriptive message:
 
-2. **Change directory in Terminal:**
+```bash
+git commit -m "Update payment provider configuration"
+```
 
-   - Run the following command in the terminal:
+## Pushing Changes to a Remote Repository
 
-     ```bash
-     cd path/to/your/bruno/collection
-     ```
+To collaborate with your team, push your changes to a remote repository:
 
-3. **Initialize Git:**
-   - Run the following command to initialize Git in the lomi. collection directory:
+```bash
+git push origin main
+```
 
-     ```bash
-     git init
-     ```
+Replace `main` with the appropriate branch name if you're using a different branching strategy.
 
-### Adding and Committing Changes
+## Pulling Changes from a Remote Repository
 
-After initializing the Git repository, you can add and commit changes to your collection.
+To get the latest changes made by your team members, pull the changes from the remote repository:
 
-1. **Creating a New HTTP Request in lomi. App**
+```bash
+git pull origin main
+```
 
-    - Hover over the collection name in the lomi. app.
-    - Click on the three dots, then click on "New Request."
-    - Type in the name of the request and populate the URL field with `https://example.com`.
-    - After populating the fields with appropriate values, click on the "Create" button, or you can press ENTER/RETURN on your keyboard to create the request. This will create a new `.bru` file with the name that you just specified.
+Again, replace `main` with the appropriate branch name if necessary.
 
-2. **Adding and committing the changes**
-   - Stage all the changes made inside the collection:
+## Resolving Merge Conflicts
 
-     ```bash
-     git add .
-     ```
-   - Commit the changes:
+If you encounter merge conflicts when pulling changes, you'll need to resolve them manually. Open the conflicting files, make the necessary changes, and then stage and commit the resolved files:
 
-     ```bash
-     git commit -m "Created my first lomi. request 🐶"
-     ```
+```bash
+git add resolved_file.js
+git commit -m "Resolve merge conflicts"
+```
 
-### Pushing and Pulling Changes
+## Best Practices
 
-To share your changes with others, you can push and pull your commits to/from a remote repository.
+- Commit frequently with descriptive messages
+- Use branches for developing new features or configurations
+- Regularly pull changes from the remote repository to stay up-to-date
+- Resolve merge conflicts carefully and communicate with your team
 
-1. **Pushing changes**
-
-   ```bash
-   git push -u origin main
-   ```
-
-2. **Pulling changes**
-
-   ```bash
-   git pull origin main
-   ```
+By using the Git CLI effectively and following best practices, you can collaborate smoothly with your team on your lomi. integration.

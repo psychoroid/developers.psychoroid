@@ -1,0 +1,69 @@
+# Handling Webhooks
+
+Webhooks allow you to receive real-time notifications from lomi. about events related to your payment transactions. By configuring webhooks, you can keep your system in sync with lomi. and react to payment events as they occur.
+
+## Configuring Webhooks
+
+1. Log in to your lomi. dashboard and navigate to the "Webhooks" section.
+2. Click on the "Add Webhook" button.
+3. Enter the URL where you want to receive the webhook notifications.
+4. Select the events you want to subscribe to (e.g., payment.success, payment.failed).
+5. Save your webhook configuration.
+
+## Verifying Webhook Signatures
+
+To ensure the authenticity of webhook requests, lomi. signs each request with a secret key. You should verify the signature to confirm that the request originated from lomi..
+
+Here's an example of how to verify the webhook signature in Node.js:
+
+```javascript
+const crypto = require('crypto');
+
+const secret = 'your_webhook_secret';
+const signature = req.headers['x-lomi-signature'];
+const payload = JSON.stringify(req.body);
+
+const expectedSignature = crypto
+  .createHmac('sha256', secret)
+  .update(payload)
+  .digest('hex');
+
+if (signature === expectedSignature) {
+  // Webhook is authentic
+} else {
+  // Webhook is not authentic
+}
+```
+
+## Handling Webhook Events
+
+When you receive a webhook notification, parse the payload and handle the event based on its type. Here's an example of handling a `payment.success` event:
+
+```javascript
+app.post('/webhooks', (req, res) => {
+  const event = req.body;
+
+  if (event.type === 'payment.success') {
+    const paymentId = event.data.id;
+    const amount = event.data.amount;
+    const currency = event.data.currency;
+
+    // Update your database or perform any necessary actions
+    // ...
+
+    console.log(`Payment ${paymentId} succeeded. Amount: ${amount} ${currency}`);
+  }
+
+  res.sendStatus(200);
+});
+```
+
+## Best Practices
+
+- Verify webhook signatures to ensure authenticity
+- Respond quickly to webhook requests to avoid timeouts
+- Handle errors gracefully and log any failures
+- Use idempotency keys to handle duplicate events
+- Keep your webhook endpoint secure and accessible
+
+By properly handling webhooks, you can keep your system synchronized with lomi. and provide a seamless payment experience for your customers. 
