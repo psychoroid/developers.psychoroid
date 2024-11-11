@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
 
 export default function Home() {
-  redirect('/introduction/what-is-bruno');
+  redirect('/introduction/what-is-lomi');
 }

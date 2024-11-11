@@ -179,11 +179,11 @@
     "parentName": "introduction",
     "path": "introduction/manifesto"
   },
-  "introduction/what-is-bruno": {
-    "name": "what-is-bruno",
+  "introduction/what-is-lomi": {
+    "name": "what-is-lomi",
     "content": "What is lomi.? \n\n\nBruno is a Git-friendly and offline-first open-source API client aimed at revolutionizing the status quo represented by tools like Postman and Insomnia. \n\nWe aim to solve two core issues: \n\n**Collaboration**\n\n\nBruno’s superpower is collaboration through a live connection to your version control system, such as Git. \n\nWith lomi., collections are stored directly in a folder on the filesystem. A plain text markup language, Bru, is used to save information about API requests. \n\n> *Go to documentation for [Collaboration via Git](../git-integration/overview)*\n\n**Data Privacy and Security**\n\n\nLegacy API clients have moved towards capturing every piece of data they can, from your PII (name, email), to the actual contents of your API requests and responses (keys, tokens, etc).\n\nBruno is an offline tool. There's no concept of a login or account, and there is no cloud connection or syncing of the work you do in lomi.. \n\n\n\n>\n> - *If you or your organization purchases a Golden Edition license, your email is required simply for the issuance of a license key.* \n> - *If your organization purchases an Ultimate Edition license, your email can be held in a self-hosted licensing server which you manage.*\n>\n",
     "parentName": "introduction",
-    "path": "introduction/what-is-bruno"
+    "path": "introduction/what-is-lomi"
   },
   "license-management/golden-edition/individual/activate-license": {
     "name": "activate-license",

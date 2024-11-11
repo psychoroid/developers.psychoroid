@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 const redirects = {
-  "/introduction/getting-started": "/introduction/what-is-bruno",
+  "/introduction/getting-started": "/introduction/what-is-lomi",
   "/license-management/license-management": "/license-management/overview",
 };
 
