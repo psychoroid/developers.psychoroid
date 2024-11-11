@@ -5,9 +5,8 @@
   "testing": "API Testing",
   "secrets-management": "Secrets Management",
   "auth": "Authentication and Authorization",
-  "bru-cli": "lomi.'s CLI",
+  "lomi-cli": "lomi.'s CLI",
   "scripting": "Scripting",
-  "bru-lang": "Bru Lang",
   "tools": "Tools",
   "license-management": "License Management",
   "advanced-guides": "Advanced Guides"

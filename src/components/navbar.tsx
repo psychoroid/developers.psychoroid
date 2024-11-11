@@ -1,4 +1,3 @@
-import { ModeToggle } from "@/components/theme-switch";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -40,7 +39,6 @@ export const Navbar = () => {
               <Github className="h-5 w-5" />
             </Link>
           </Button>
-          <ModeToggle className="ml-1" />
         </div>
       </nav>
     </div>

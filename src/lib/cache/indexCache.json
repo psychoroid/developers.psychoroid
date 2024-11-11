@@ -223,7 +223,7 @@
     "children": [
       {
         "name": "Overview",
-        "path": "bru-cli/overview"
+        "path": "lomi-cli/overview"
       }
     ]
   },
@@ -279,31 +279,6 @@
       {
         "name": "Javascript Reference",
         "path": "scripting/javascript-reference"
-      }
-    ]
-  },
-  {
-    "name": "Bru Lang",
-    "children": [
-      {
-        "name": "Overview",
-        "path": "bru-lang/overview"
-      },
-      {
-        "name": "Samples",
-        "path": "bru-lang/samples"
-      },
-      {
-        "name": "Language",
-        "path": "bru-lang/language"
-      },
-      {
-        "name": "Tag Reference",
-        "path": "bru-lang/tag-reference"
-      },
-      {
-        "name": "Syntax Highlighting",
-        "path": "bru-lang/syntax-highlighting"
       }
     ]
   },
