@@ -1,7 +1,7 @@
 {
   "overview": "Overview",
-  "best-practices": "Best Practices",
-  "branching-strategy": "Branching Strategy",
-  "code-reviews": "Code Reviews",
-  "versioning": "Versioning"
+  "getting-started": "Getting Started",
+  "contributing-guidelines": "Contributing Guidelines",
+  "bounty-program": "Bounty Program",
+  "code-of-conduct": "Code of Conduct"
 }

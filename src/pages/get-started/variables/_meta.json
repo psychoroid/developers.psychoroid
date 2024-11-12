@@ -1,6 +1,4 @@
 {
 	"overview": "Overview",
-	"environment-variables": "Environment Variables",
-	"api-keys": "API Keys",
-	"webhook-secrets": "Webhook Secrets"
+	"api-keys": "API Keys"
 }
