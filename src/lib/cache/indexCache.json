@@ -20,7 +20,7 @@
     "name": "Getting Started",
     "children": [
       {
-        "name": "lomi. Basics",
+        "name": "Basics",
         "children": [
           {
             "name": "Sign Up",
@@ -35,10 +35,6 @@
             "path": "get-started/lomi-basics/setup-payment-methods"
           },
           {
-            "name": "Test Your Integration",
-            "path": "get-started/lomi-basics/test-integration"
-          },
-          {
             "name": "Process Transactions",
             "path": "get-started/lomi-basics/process-transactions"
           }
@@ -50,30 +46,42 @@
           {
             "name": "Overview",
             "path": "get-started/variables/overview"
+          },
+          {
+            "name": "API Keys",
+            "path": "get-started/variables/api-keys"
           }
         ]
-      },
-      {
-        "name": "JavaScript Sandbox",
-        "path": "get-started/javascript-sandbox"
       }
     ]
   },
   {
-    "name": "Git Integration",
+    "name": "Integration",
     "children": [
       {
         "name": "Overview",
         "path": "git-integration/overview"
       },
       {
-        "name": "Collaboration via CLI",
-        "path": "git-integration/using-cli"
+        "name": "Getting Started",
+        "path": "git-integration/getting-started"
+      },
+      {
+        "name": "Contributing Guidelines",
+        "path": "git-integration/contributing-guidelines"
+      },
+      {
+        "name": "Bounty Program",
+        "path": "git-integration/bounty-program"
+      },
+      {
+        "name": "Code of Conduct",
+        "path": "git-integration/code-of-conduct"
       }
     ]
   },
   {
-    "name": "lomi.'s CLI",
+    "name": "lomi. with CLI",
     "children": [
       {
         "name": "Overview",
@@ -82,11 +90,15 @@
     ]
   },
   {
-    "name": "License Management",
+    "name": "License",
     "children": [
       {
         "name": "Overview",
         "path": "license-management/overview"
+      },
+      {
+        "name": "Open Source",
+        "path": "license-management/open-source"
       }
     ]
   },
@@ -94,8 +106,20 @@
     "name": "Advanced Guides",
     "children": [
       {
-        "name": "Working with BigInt",
-        "path": "advanced-guides/working-with-bigint"
+        "name": "Handling Webhooks",
+        "path": "advanced-guides/handling-webhooks"
+      },
+      {
+        "name": "Idempotency Keys",
+        "path": "advanced-guides/idempotency-keys"
+      },
+      {
+        "name": "Error Handling",
+        "path": "advanced-guides/error-handling"
+      },
+      {
+        "name": "Security Best Practices",
+        "path": "advanced-guides/security-best-practices"
       }
     ]
   }
