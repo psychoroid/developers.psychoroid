@@ -1,0 +1,63 @@
+# Idempotency Keys
+
+Idempotency keys are unique identifiers that you can include in your API requests to ensure that the same operation is not executed multiple times. This is particularly useful when dealing with network issues or timeouts, where a request might be retried, and you want to avoid duplicate transactions.
+
+## Using Idempotency Keys
+
+To use an idempotency key, include it in the `Idempotency-Key` header of your API request:
+
+```bash
+curl -X POST \
+  https://api.lomi.africa/v1/payments \
+  -H 'Authorization: Bearer your_api_key' \
+  -H 'Idempotency-Key: unique_key_for_this_request' \
+  -d '{
+    "amount": 1000,
+    "currency": "XOF",
+    "payment_method": "mtn_mobile_money",
+    "customer": {
+      "name": "John Doe",
+      "email": "john@example.com"
+    }
+  }'
+```
+
+If you make multiple requests with the same idempotency key, lomi. will process the request only once and return the same response for subsequent requests.
+
+## Generating Idempotency Keys
+
+Idempotency keys should be unique for each distinct request. You can generate them using a combination of the request parameters and a unique identifier, such as a UUID or a timestamp.
+
+Here's an example of generating an idempotency key in JavaScript:
+
+```javascript
+const crypto = require('crypto');
+
+function generateIdempotencyKey(params) {
+  const input = JSON.stringify(params);
+  const hash = crypto.createHash('sha256').update(input).digest('hex');
+  const timestamp = Date.now().toString();
+  return `${hash}_${timestamp}`;
+}
+
+const params = {
+  amount: 1000,
+  currency: 'XOF',
+  payment_method: 'mtn_mobile_money',
+  customer: {
+    name: 'John Doe',
+    email: 'john@example.com'
+  }
+};
+
+const idempotencyKey = generateIdempotencyKey(params);
+```
+
+## Best Practices
+
+- Use unique idempotency keys for each distinct request
+- Include all relevant request parameters when generating the key
+- Store the idempotency key and the corresponding response in your database to handle duplicate requests
+- Set a reasonable expiration time for idempotency keys to avoid key collisions
+
+By implementing idempotency keys, you can ensure that your payment transactions are processed exactly once, even in the face of network issues or timeouts. 

@@ -12,18 +12,18 @@ export const Navbar = () => {
       <nav className="flex items-center max-w-[1400px] w-full justify-between">
         <div className="flex items-center grow">
           <Button
-            className="flex items-center group !no-underline"
+            className="flex items-center !no-underline"
             asChild
             variant="link"
           >
             <Link href="/">
               <div className="flex items-center">
                 <Image
-                  src="/43.png"
+                  src="/lomi-icon.png"
                   alt="lomi. Logo"
-                  height={40}
-                  width={40}
-                  className="h-8 w-8 sm:h-10 sm:w-10 group-hover:animate-infinite group-hover:animate-wiggle"
+                  height={35}
+                  width={35}
+                  className="h-6 w-6 sm:h-10 mr-2 sm:w-10"
                 />
                 <Typography variant="h3" className="ml-1">
                   lomi.

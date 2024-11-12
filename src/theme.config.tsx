@@ -8,13 +8,13 @@ const themeConfig = {
       titleTemplate: "%s – lomi. Docs",
       additionalLinkTags: [
         {
-          href: "/43.png",
+          href: "/11.png",
           rel: "icon",
           sizes: "32x32",
           type: "image/png",
         },
         {
-          href: "/43.png",
+          href: "/11.png",
           rel: "apple-touch-icon",
           sizes: "32x32",
           type: "image/png",
@@ -33,7 +33,7 @@ const themeConfig = {
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:title" content="lomi. Docs" />
-      <meta property="og:description" content="The open-source API Client" />
+      <meta property="og:description" content="Open-source payment orchestration platform for West-Africa" />
     </>
   ),
   navbar: {

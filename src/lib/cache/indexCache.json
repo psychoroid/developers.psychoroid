@@ -20,44 +20,23 @@
     "name": "Getting Started",
     "children": [
       {
-        "name": "lomi. Basics",
+        "name": "Basics",
         "children": [
           {
-            "name": "Download",
-            "path": "get-started/bruno-basics/download"
+            "name": "Sign Up",
+            "path": "get-started/lomi-basics/sign-up"
           },
           {
-            "name": "Create a Request",
-            "path": "get-started/bruno-basics/create-a-request"
+            "name": "Create a Merchant Account",
+            "path": "get-started/lomi-basics/create-merchant-account"
           },
           {
-            "name": "Create a Collection",
-            "path": "get-started/bruno-basics/create-a-collection"
+            "name": "Set Up Payment Methods",
+            "path": "get-started/lomi-basics/setup-payment-methods"
           },
           {
-            "name": "Create a Test",
-            "path": "get-started/bruno-basics/create-a-test"
-          },
-          {
-            "name": "Run a Collection",
-            "path": "get-started/bruno-basics/run-a-collection"
-          }
-        ]
-      },
-      {
-        "name": "Import or Export Data",
-        "children": [
-          {
-            "name": "Exporting Collections",
-            "path": "get-started/import-export-data/export-collections"
-          },
-          {
-            "name": "Importing Collections",
-            "path": "get-started/import-export-data/import-collections"
-          },
-          {
-            "name": "Migrating from Postman",
-            "path": "get-started/import-export-data/postman-migration"
+            "name": "Process Transactions",
+            "path": "get-started/lomi-basics/process-transactions"
           }
         ]
       },
@@ -69,157 +48,52 @@
             "path": "get-started/variables/overview"
           },
           {
-            "name": "Collection Variables",
-            "path": "get-started/variables/collection-variables"
-          },
-          {
-            "name": "Folder Variables",
-            "path": "get-started/variables/folder-variables"
-          },
-          {
-            "name": "Request Variables",
-            "path": "get-started/variables/request-variables"
-          },
-          {
-            "name": "Runtime Variables",
-            "path": "get-started/variables/runtime-variables"
+            "name": "API Keys",
+            "path": "get-started/variables/api-keys"
           }
         ]
-      },
-      {
-        "name": "JavaScript Sandbox",
-        "path": "get-started/javascript-sandbox"
       }
     ]
   },
   {
-    "name": "Git Integration",
+    "name": "Integration",
     "children": [
       {
         "name": "Overview",
         "path": "git-integration/overview"
       },
       {
-        "name": "Collaboration via CLI",
-        "path": "git-integration/using-cli"
+        "name": "Getting Started",
+        "path": "git-integration/getting-started"
       },
       {
-        "name": "Collaboration via GUI",
-        "path": "git-integration/using-gui"
+        "name": "Contributing Guidelines",
+        "path": "git-integration/contributing-guidelines"
+      },
+      {
+        "name": "Bounty Program",
+        "path": "git-integration/bounty-program"
+      },
+      {
+        "name": "Code of Conduct",
+        "path": "git-integration/code-of-conduct"
+      },
+      {
+        "name": "Code Reviews",
+        "path": "git-integration/code-reviews"
+      },
+      {
+        "name": "Branching",
+        "path": "git-integration/branching-stategy"
+      },
+      {
+        "name": "Versioning",
+        "path": "git-integration/versioning"
       }
     ]
   },
   {
-    "name": "API Testing",
-    "children": [
-      {
-        "name": "Introduction",
-        "path": "testing/introduction"
-      },
-      {
-        "name": "Assertions",
-        "path": "testing/assertions"
-      },
-      {
-        "name": "JavaScript Reference",
-        "path": "testing/javascript-reference"
-      }
-    ]
-  },
-  {
-    "name": "Secrets Management",
-    "children": [
-      {
-        "name": "Overview",
-        "path": "secrets-management/overview"
-      },
-      {
-        "name": "Dotenv File",
-        "path": "secrets-management/dotenv-file"
-      },
-      {
-        "name": "Secret Variables",
-        "path": "secrets-management/secret-variables"
-      },
-      {
-        "name": "Hashicorp Vault",
-        "children": [
-          {
-            "name": "Overview",
-            "path": "secrets-management/hashicorp-vault/overview"
-          },
-          {
-            "name": "Adding a Secret Provider",
-            "path": "secrets-management/hashicorp-vault/adding-a-secret-provider"
-          },
-          {
-            "name": "Configuring and Fetching secrets",
-            "path": "secrets-management/hashicorp-vault/configuring-and-fetching-secrets"
-          },
-          {
-            "name": "Using Secrets",
-            "path": "secrets-management/hashicorp-vault/using-secrets"
-          },
-          {
-            "name": "Using with CLI",
-            "path": "secrets-management/hashicorp-vault/using-with-cli"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Authentication and Authorization",
-    "children": [
-      {
-        "name": "Overview",
-        "path": "auth/overview"
-      },
-      {
-        "name": "OAuth 2.0",
-        "children": [
-          {
-            "name": "Overview",
-            "path": "auth/oauth2/overview"
-          },
-          {
-            "name": "Authorization Code",
-            "path": "auth/oauth2/authorization-code"
-          },
-          {
-            "name": "Client Credentials",
-            "path": "auth/oauth2/client-credentials"
-          },
-          {
-            "name": "Password Credentials",
-            "path": "auth/oauth2/password-credentials"
-          }
-        ]
-      },
-      {
-        "name": "AWS Signature",
-        "path": "auth/aws-signature"
-      },
-      {
-        "name": "Basic",
-        "path": "auth/basic"
-      },
-      {
-        "name": "Bearer",
-        "path": "auth/bearer"
-      },
-      {
-        "name": "Digest",
-        "path": "auth/digest"
-      },
-      {
-        "name": "Add and Manage Certificates",
-        "path": "auth/add-and-manage-certs"
-      }
-    ]
-  },
-  {
-    "name": "lomi.'s CLI",
+    "name": "lomi. with CLI",
     "children": [
       {
         "name": "Overview",
@@ -228,110 +102,36 @@
     ]
   },
   {
-    "name": "Scripting",
-    "children": [
-      {
-        "name": "Getting Started",
-        "path": "scripting/getting-started"
-      },
-      {
-        "name": "Variables",
-        "path": "scripting/vars"
-      },
-      {
-        "name": "Response",
-        "children": [
-          {
-            "name": "Response Query",
-            "path": "scripting/response/response-query"
-          },
-          {
-            "name": "Response Object",
-            "path": "scripting/response/response-object"
-          }
-        ]
-      },
-      {
-        "name": "Request",
-        "children": [
-          {
-            "name": "Request Object",
-            "path": "scripting/request/request-object"
-          },
-          {
-            "name": "Sync Requests",
-            "path": "scripting/request/sync-requests"
-          }
-        ]
-      },
-      {
-        "name": "Inbuilt Libraries",
-        "path": "scripting/inbuilt-libraries"
-      },
-      {
-        "name": "External Libraries",
-        "path": "scripting/external-libraries"
-      },
-      {
-        "name": "Whitelisting Modules",
-        "path": "scripting/whitelisting-modules"
-      },
-      {
-        "name": "Javascript Reference",
-        "path": "scripting/javascript-reference"
-      }
-    ]
-  },
-  {
-    "name": "Tools",
-    "path": "tools"
-  },
-  {
-    "name": "License Management",
+    "name": "License",
     "children": [
       {
         "name": "Overview",
         "path": "license-management/overview"
       },
       {
-        "name": "Golden Edition",
-        "children": [
-          {
-            "name": "Individuals",
-            "children": [
-              {
-                "name": "Activate License",
-                "path": "license-management/golden-edition/individual/activate-license"
-              }
-            ]
-          },
-          {
-            "name": "Organizations",
-            "children": [
-              {
-                "name": "Manage Licenses",
-                "path": "license-management/golden-edition/organization/manage-licenses"
-              },
-              {
-                "name": "Activate License",
-                "path": "license-management/golden-edition/organization/activate-license"
-              }
-            ]
-          }
-        ]
+        "name": "Open Source",
+        "path": "license-management/open-source"
+      }
+    ]
+  },
+  {
+    "name": "Advanced Guides",
+    "children": [
+      {
+        "name": "Handling Webhooks",
+        "path": "advanced-guides/handling-webhooks"
       },
       {
-        "name": "Ultimate Edition",
-        "children": [
-          {
-            "name": "Manage Licenses",
-            "path": "license-management/ultimate-edition/manage-licenses"
-          },
-          {
-            "name": "Activate License",
-            "path": "license-management/ultimate-edition/activate-license"
-          }
-        ]
+        "name": "Idempotency Keys",
+        "path": "advanced-guides/idempotency-keys"
+      },
+      {
+        "name": "Error Handling",
+        "path": "advanced-guides/error-handling"
+      },
+      {
+        "name": "Security Best Practices",
+        "path": "advanced-guides/security-best-practices"
       }
     ]
   }

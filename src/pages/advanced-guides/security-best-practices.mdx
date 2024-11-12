@@ -1,0 +1,41 @@
+# Security Best Practices
+
+Security is of utmost importance when dealing with payment transactions. lomi. provides a secure payment orchestration platform, but it's also crucial to follow security best practices in your own integration to protect your customers' sensitive information.
+
+## Secure Communication
+
+Always use HTTPS for all communication between your server and the lomi. API. This ensures that all data transmitted is encrypted and protected from eavesdropping.
+
+## Protect Your API Keys
+
+Keep your lomi. API keys secure and never expose them in client-side code or publicly accessible repositories. Store them securely on your server and use environment variables to load them into your application.
+
+## Validate and Sanitize User Input
+
+Validate and sanitize all user input before sending it to the lomi. API. This helps prevent injection attacks and ensures that the data sent to lomi. is in the expected format.
+
+## Use Secure Authentication Methods
+
+When authenticating your customers, use secure methods such as OAuth 2.0 or JWT tokens. Avoid sending sensitive information, such as passwords, in plain text.
+
+## Implement Secure Webhook Endpoints
+
+When configuring webhook endpoints to receive notifications from lomi., ensure that they are secure and accessible only to lomi.. Validate the webhook signatures to verify the authenticity of the requests.
+
+## Regularly Update Your Integration
+
+Keep your lomi. integration code up-to-date with the latest security patches and API updates. Regularly monitor the lomi. changelog and update your code accordingly.
+
+## Limit Access to Sensitive Data
+
+Restrict access to sensitive customer and transaction data to only those who need it. Implement proper access controls and logging to detect and prevent unauthorized access.
+
+## Educate Your Team
+
+Educate your team about security best practices and ensure that everyone understands their role in keeping your integration secure. Regularly review and update your security policies and procedures.
+
+## Monitor and Audit Your Systems
+
+Implement monitoring and auditing mechanisms to detect and respond to security incidents promptly. Regularly review your logs and access records to identify any suspicious activities.
+
+By following these security best practices, you can ensure that your lomi. integration is secure and protect your customers' sensitive information. 

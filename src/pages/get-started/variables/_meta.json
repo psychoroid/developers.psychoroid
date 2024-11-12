@@ -1,7 +1,4 @@
 {
 	"overview": "Overview",
-	"collection-variables": "Collection Variables",
-	"folder-variables": "Folder Variables",
-	"request-variables": "Request Variables",
-	"runtime-variables": "Runtime Variables"
+	"api-keys": "API Keys"
 }

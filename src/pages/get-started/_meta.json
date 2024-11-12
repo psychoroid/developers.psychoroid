@@ -1,6 +1,4 @@
 {
-  "bruno-basics": "lomi. Basics",
-  "import-export-data": "Import or Export Data",
-  "variables": "Variables",
-  "javascript-sandbox": "JavaScript Sandbox"
+  "lomi-basics": "Basics",
+  "variables": "Variables"
 }

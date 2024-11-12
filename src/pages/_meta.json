@@ -1,13 +1,8 @@
 {
   "introduction": "Introduction",
   "get-started": "Getting Started",
-  "git-integration": "Git Integration",
-  "testing": "API Testing",
-  "secrets-management": "Secrets Management",
-  "auth": "Authentication and Authorization",
-  "lomi-cli": "lomi.'s CLI",
-  "scripting": "Scripting",
-  "tools": "Tools",
-  "license-management": "License Management",
+  "git-integration": "Integration",
+  "lomi-cli": "lomi. with CLI",
+  "license-management": "License",
   "advanced-guides": "Advanced Guides"
 }

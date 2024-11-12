@@ -1,0 +1,67 @@
+# Error Handling
+
+When integrating with lomi., it's essential to handle errors gracefully to provide a smooth payment experience for your customers. lomi. returns meaningful error codes and messages that you can use to troubleshoot issues and inform your customers about the status of their transactions.
+
+## Error Response Format
+
+When an error occurs, lomi. returns an HTTP status code in the 4xx or 5xx range, along with a JSON payload containing more details about the error. The error response format looks like this:
+
+```json
+{
+  "error": {
+    "code": "error_code",
+    "message": "Error message describing the issue",
+    "details": {
+      "field1": "Detailed error message for field1",
+      "field2": "Detailed error message for field2"
+    }
+  }
+}
+```
+
+## Common Error Codes
+
+Here are some common error codes you might encounter when working with lomi.:
+
+- `authentication_error`: The API key or authentication token is invalid or missing.
+- `invalid_request_error`: The request is missing required parameters or has invalid values.
+- `payment_method_error`: The specified payment method is invalid or not supported.
+- `transaction_declined`: The payment transaction was declined by the payment provider.
+- `server_error`: An unexpected error occurred on the lomi. server.
+
+For a complete list of error codes and their meanings, refer to the [lomi. API documentation](https://docs.lomi.africa/api-reference/errors).
+
+## Handling Errors in Your Code
+
+When making requests to the lomi. API, check the response status code and handle errors accordingly. Here's an example of handling errors in JavaScript:
+
+```javascript
+try {
+  const response = await axios.post('https://api.lomi.africa/v1/payments', {
+    // Payment request payload
+  });
+
+  if (response.status === 200) {
+    // Payment successful
+  } else {
+    // Payment failed
+    const error = response.data.error;
+    console.error(`Payment failed with code: ${error.code}`);
+    console.error(`Error message: ${error.message}`);
+    // Handle the error based on the error code
+  }
+} catch (error) {
+  console.error('Request failed:', error);
+  // Handle network or other errors
+}
+```
+
+## Best Practices
+
+- Handle errors gracefully and provide meaningful feedback to your customers
+- Log errors for debugging and monitoring purposes
+- Retry failed requests with exponential backoff to handle transient issues
+- Use idempotency keys to avoid duplicate transactions in case of retries
+- Keep your integration code up-to-date with the latest lomi. API version and error codes
+
+By properly handling errors, you can ensure a smooth payment experience for your customers and quickly troubleshoot any issues that arise. 
