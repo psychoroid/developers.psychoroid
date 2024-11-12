@@ -77,6 +77,18 @@
       {
         "name": "Code of Conduct",
         "path": "git-integration/code-of-conduct"
+      },
+      {
+        "name": "Code Reviews",
+        "path": "git-integration/code-reviews"
+      },
+      {
+        "name": "Branching",
+        "path": "git-integration/branching-stategy"
+      },
+      {
+        "name": "Versioning",
+        "path": "git-integration/versioning"
       }
     ]
   },
