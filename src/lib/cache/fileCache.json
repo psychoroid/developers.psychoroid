@@ -1,4 +1,22 @@
 {
+  "_app": {
+    "name": "_app",
+    "content": "import '@/app/globals.css';\nimport { ThemeProvider } from \"@/components/theme-provider\";\nimport { Toaster } from \"@/components/ui/sonner\";\nimport { AppProps } from 'next/app';\n\nexport default function App({ Component, pageProps }: AppProps) {\n    return (\n        \n            \n            \n        \n    );\n} ",
+    "parentName": null,
+    "path": "_app"
+  },
+  "_meta": {
+    "name": "_meta",
+    "content": "import { Meta } from '@/lib/types/meta';\n\nconst meta: Meta = {\n    introduction: \"Introduction\",\n    \"get-started\": \"Getting Started\",\n    \"git-integration\": \"Integration\",\n    \"psychoroid-cli\": \"psychoroid.com with CLI\",\n    \"license-management\": \"License\",\n    \"advanced-guides\": \"Advanced Guides\"\n};\n\nexport default meta;",
+    "parentName": null,
+    "path": "_meta"
+  },
+  "advanced-guides/_meta": {
+    "name": "_meta",
+    "content": "import { Meta } from '@/lib/types/meta';\n\nconst meta: Meta = {\n  \"handling-webhooks\": \"Handling Webhooks\",\n  \"idempotency-keys\": \"Idempotency Keys\",\n  \"error-handling\": \"Error Handling\",\n  \"security-best-practices\": \"Security Best Practices\"\n};\n\nexport default meta;",
+    "parentName": "advanced-guides",
+    "path": "advanced-guides/_meta"
+  },
   "advanced-guides/error-handling": {
     "name": "error-handling",
     "content": "Error Handling\n\n\nWhen integrating with psychoroid.com, it's essential to handle errors gracefully to provide a smooth payment experience for your customers. psychoroid.com returns meaningful error codes and messages that you can use to troubleshoot issues and inform your customers about the status of their transactions.\n\nError Response Format\n\n\nWhen an error occurs, psychoroid.com returns an HTTP status code in the 4xx or 5xx range, along with a JSON payload containing more details about the error. The error response format looks like this:\n\n```json\n{\n  \"error\": {\n    \"code\": \"error_code\",\n    \"message\": \"Error message describing the issue\",\n    \"details\": {\n      \"field1\": \"Detailed error message for field1\",\n      \"field2\": \"Detailed error message for field2\"\n    }\n  }\n}\n```\n\nCommon Error Codes\n\n\nHere are some common error codes you might encounter when working with psychoroid.com:\n\n- `authentication_error`: The API key or authentication token is invalid or missing.\n- `invalid_request_error`: The request is missing required parameters or has invalid values.\n- `payment_method_error`: The specified payment method is invalid or not supported.\n- `transaction_declined`: The payment transaction was declined by the payment provider.\n- `server_error`: An unexpected error occurred on the psychoroid.com server.\n\nFor a complete list of error codes and their meanings, refer to the [psychoroid.com API documentation](\n\nHandling Errors in Your Code\n\n\nWhen making requests to the psychoroid.com API, check the response status code and handle errors accordingly. Here's an example of handling errors in JavaScript:\n\n```javascript\ntry {\n  const response = await axios.post(' {\n    // Payment request payload\n  });\n\n  if (response.status === 200) {\n    // Payment successful\n  } else {\n    // Payment failed\n    const error = response.data.error;\n    console.error(`Payment failed with code: ${error.code}`);\n    console.error(`Error message: ${error.message}`);\n    // Handle the error based on the error code\n  }\n} catch (error) {\n  console.error('Request failed:', error);\n  // Handle network or other errors\n}\n```\n\nBest Practices\n\n\n- Handle errors gracefully and provide meaningful feedback to your customers\n- Log errors for debugging and monitoring purposes\n- Retry failed requests with exponential backoff to handle transient issues\n- Use idempotency keys to avoid duplicate transactions in case of retries\n- Keep your integration code up-to-date with the latest psychoroid.com API version and error codes\n\nBy properly handling errors, you can ensure a smooth payment experience for your customers and quickly troubleshoot any issues that arise. ",
@@ -22,6 +40,18 @@
     "content": "Security Best Practices\n\n\nSecurity is of utmost importance when dealing with payment transactions. psychoroid.com provides a secure payment orchestration platform, but it's also crucial to follow security best practices in your own integration to protect your customers' sensitive information.\n\nSecure Communication\n\n\nAlways use HTTPS for all communication between your server and the psychoroid.com API. This ensures that all data transmitted is encrypted and protected from eavesdropping.\n\nProtect Your API Keys\n\n\nKeep your psychoroid.com API keys secure and never expose them in client-side code or publicly accessible repositories. Store them securely on your server and use environment variables to load them into your application.\n\nValidate and Sanitize User Input\n\n\nValidate and sanitize all user input before sending it to the psychoroid.com API. This helps prevent injection attacks and ensures that the data sent to psychoroid.com is in the expected format.\n\nUse Secure Authentication Methods\n\n\nWhen authenticating your customers, use secure methods such as OAuth 2.0 or JWT tokens. Avoid sending sensitive information, such as passwords, in plain text.\n\nImplement Secure Webhook Endpoints\n\n\nWhen configuring webhook endpoints to receive notifications from psychoroid.com, ensure that they are secure and accessible only to psychoroid.com. Validate the webhook signatures to verify the authenticity of the requests.\n\nRegularly Update Your Integration\n\n\nKeep your psychoroid.com integration code up-to-date with the latest security patches and API updates. Regularly monitor the psychoroid.com changelog and update your code accordingly.\n\nLimit Access to Sensitive Data\n\n\nRestrict access to sensitive customer and transaction data to only those who need it. Implement proper access controls and logging to detect and prevent unauthorized access.\n\nEducate Your Team\n\n\nEducate your team about security best practices and ensure that everyone understands their role in keeping your integration secure. Regularly review and update your security policies and procedures.\n\nMonitor and Audit Your Systems\n\n\nImplement monitoring and auditing mechanisms to detect and respond to security incidents promptly. Regularly review your logs and access records to identify any suspicious activities.\n\nBy following these security best practices, you can ensure that your psychoroid.com integration is secure and protect your customers' sensitive information. ",
     "parentName": "advanced-guides",
     "path": "advanced-guides/security-best-practices"
+  },
+  "get-started/_meta": {
+    "name": "_meta",
+    "content": "import { Meta } from '@/lib/types/meta';\n\nconst meta: Meta = {\n    \"psychoroid-basics\": \"Basics\",\n    \"variables\": \"Variables\"\n};\n\nexport default meta;",
+    "parentName": "get-started",
+    "path": "get-started/_meta"
+  },
+  "get-started/psychoroid-basics/_meta": {
+    "name": "_meta",
+    "content": "import { Meta } from '@/lib/types/meta';\n\nconst meta: Meta = {\n  \"sign-up\": \"Sign Up\",\n  \"create-merchant-account\": \"Create a Merchant Account\",\n  \"setup-payment-methods\": \"Set Up Payment Methods\",\n  \"process-transactions\": \"Process Transactions\"\n};\n\nexport default meta;",
+    "parentName": "get-started",
+    "path": "get-started/psychoroid-basics/_meta"
   },
   "get-started/psychoroid-basics/create-merchant-account": {
     "name": "create-merchant-account",
@@ -47,6 +77,12 @@
     "parentName": "get-started",
     "path": "get-started/psychoroid-basics/sign-up"
   },
+  "get-started/variables/_meta": {
+    "name": "_meta",
+    "content": "import { Meta } from '@/lib/types/meta';\n\nconst meta: Meta = {\n\t\"overview\": \"Overview\",\n\t\"api-keys\": \"API Keys\"\n};\n\nexport default meta;",
+    "parentName": "get-started",
+    "path": "get-started/variables/_meta"
+  },
   "get-started/variables/api-keys": {
     "name": "api-keys",
     "content": "API Keys\n\n\nAPI keys are used to authenticate your integration with the psychoroid.com API. It's essential to keep your API keys secure and manage them effectively.\n\nCreating API Keys\n\n\nTo create an API key:\n\n1. Log in to your psychoroid.com account and navigate to the \"Settings\" page.\n2. Click on the \"API Keys\" tab.\n3. Click the \"Create API Key\" button.\n4. Enter a name for your API key and select the appropriate permissions.\n5. Click \"Create\" to generate your API key.\n6. Copy and save your Key!\n\nUsing API Keys\n\n\nTo use your API key, include it in the `Authorization` header of your API requests:\n\n```bash\nAuthorization: Bearer YOUR_API_KEY\n```\n\nIn your integration code, you can store your API key as an environment variable and reference it using the `{{ENV_VAR_NAME}}` syntax:\n\n```javascript\nconst apiKey = '{{LOMI_API_KEY}}';\nconst headers = {\n  'Authorization': `Bearer ${apiKey}`,\n  'Content-Type': 'application/json'\n};\n```\n\nBest Practices\n\n\n- Keep your API keys secure and never share them with anyone.\n- Regularly rotate your API keys to minimize the risk of unauthorized access.\n- Use environment variables to store your API keys instead of hardcoding them in your integration code.\n- Restrict the permissions of your API keys to the minimum required for your integration to function.\n\nBy following these best practices, you can ensure the security and integrity of your psychoroid.com integration. ",
@@ -58,6 +94,12 @@
     "content": "Variables\n\n\nVariables in psychoroid.com allow you to store and manage dynamic values that can be used across your payment integration setup. This feature enhances flexibility, maintainability, and security by enabling you to manage sensitive data, such as API keys, in a centralized manner.\n\npsychoroid.com supports the use of variables, specifically API keys, to authenticate and secure your integration with the psychoroid.com API.\n\n- [API Keys](./api-keys): Manage your API keys securely and use them to authenticate your requests to the psychoroid.com API.\n\nBy leveraging variables, you can keep your integration setup clean, maintainable, and secure, while easily managing your API credentials.",
     "parentName": "get-started",
     "path": "get-started/variables/overview"
+  },
+  "git-integration/_meta": {
+    "name": "_meta",
+    "content": "import { Meta } from '@/lib/types/meta';\n\nconst meta: Meta = {\n  \"overview\": \"Overview\",\n  \"getting-started\": \"Getting Started\",\n  \"contributing-guidelines\": \"Contributing Guidelines\",\n  \"bounty-program\": \"Bounty Program\",\n  \"code-of-conduct\": \"Code of Conduct\",\n  \"code-reviews\": \"Code Reviews\",\n  \"branching-strategy\": \"Branching\",\n  \"versioning\": \"Versioning\"\n};\n\nexport default meta;",
+    "parentName": "git-integration",
+    "path": "git-integration/_meta"
   },
   "git-integration/best-practices": {
     "name": "best-practices",
@@ -113,6 +155,12 @@
     "parentName": "git-integration",
     "path": "git-integration/versioning"
   },
+  "introduction/_meta": {
+    "name": "_meta",
+    "content": "import { Meta } from '@/lib/types/meta';\n\nconst meta: Meta = {\n    \"what-is-psychoroid\": \"What is psychoroid.com?\",\n    \"manifesto\": \"Manifesto\",\n    \"feedback-community\": \"Feedback and Community\"\n};\n\nexport default meta;",
+    "parentName": "introduction",
+    "path": "introduction/_meta"
+  },
   "introduction/feedback-community": {
     "name": "feedback-community",
     "content": "Feedback & Community \n\n\nWe are building a community of merchants, developers, and payment innovators who are committed to transform payment. Our platform evolution and feature development are driven by real merchant needs and market requirements.\n\nHelp us continue building Africa's most comprehensive and merchant-friendly payment orchestration platform!\n\nHow to Engage\n\n- Raise an issue on [GitHub]( \n- Follow us and [star us](\n- Contact our [team](mailto:dev@psychoroid.com)\n- Visit our [Website](\n- Use our solution to sell!\n\nFor Developers\n\n- Explore our [API Documentation](../api-reference/overview)\n- Check out our [Integration Guides](../integration/getting-started)\n- Read our [Security Guidelines](../security/overview)\n- View our [SDK Documentation](../sdks/overview)\n- Look for feature requests and make a contribution",
@@ -131,6 +179,12 @@
     "parentName": "introduction",
     "path": "introduction/what-is-psychoroid"
   },
+  "license-management/_meta": {
+    "name": "_meta",
+    "content": "import { Meta } from '@/lib/types/meta';\n\nconst meta: Meta = {\n  \"overview\": \"Overview\",\n  \"open-source\": \"Open Source\"\n};\n\nexport default meta;",
+    "parentName": "license-management",
+    "path": "license-management/_meta"
+  },
   "license-management/open-source": {
     "name": "open-source",
     "content": "Open Source Licensing\n\n\npsychoroid.com is committed to providing a powerful and accessible payment orchestration platform for everyone. As part of this commitment, we offer an open-source version of our platform under the an Apache License on our Github.\n\nWe are here to help you make money\n\n\nFor regular merchants of our open-source version, there is no need to worry about this. You can simply start using psychoroid.com on our website without any restrictions and/or additional setup.\n\nFeatures and Limitations\n\n\nWhile the open-source version of psychoroid.com provides a comprehensive set of features for payment orchestration, it may lack some of the advanced capabilities and support offered in our hosted platform.\n\nFor a detailed comparison of the features available in each version, please refer to our [feature matrix](\n\nGoing live by hosting the solution myself\n\n\nIf you would like to host the platform yourself, you can easily get started by cloning our main repo. However you'll have to get providers API keys by contacting them yourself.\n\nIf you find that your business do not need to host it manually andrequires more advanced features, dedicated support, or enterprise-grade capabilities, you can just get started on the [main platform](\n\nTo learn more about our vision and why psychoroid.com is open-source, please visit our [About page]( or [contact our founder](mailto:dev@psychoroid.com). ",
@@ -143,10 +197,16 @@
     "parentName": "license-management",
     "path": "license-management/overview"
   },
-  "lomi-cli/overview": {
+  "psychoroid-cli/_meta": {
+    "name": "_meta",
+    "content": "import { Meta } from '@/lib/types/meta';\n\nconst meta: Meta = {\n  \"overview\": \"Overview\"\n};\n\nexport default meta;",
+    "parentName": "psychoroid-cli",
+    "path": "psychoroid-cli/_meta"
+  },
+  "psychoroid-cli/overview": {
     "name": "overview",
     "content": "psychoroid.com CLI\n\n\nLeveraging psychoroid.com CLI allows you to interact with your account and perform various tasks related to your payment integration setup using simple command-line commands.\n\nThis makes it easier to manage your payment integrations, test your setup in different environments, automate your testing process, and deploy the applicaiton more easily.\n\nInstallation\n\n\nTo install the psychoroid.com CLI, use the package manager of your choice, such as NPM:\n\n```bash copy\nnpm install -g @psychoroid/cli\n```\n\nAuthentication\n\n\nTo use the psychoroid.com CLI, you need to authenticate with your psychoroid.com account. You can do this by setting the `LOMI_API_KEY` environment variable to your API key:\n\n```bash copy\nexport PSYCHOROID_API_KEY=your_api_key_here\n```\n\nAlternatively, you can pass the API key as a command-line argument using the `--api-key` flag:\n\n```bash copy\npsychoroid --api-key your_api_key_here command\n```\n\nCommands\n\n\n`psychoroid setup`\n\n\nThe `setup` command helps you set up your psychoroid.com integration by guiding you through the process of creating a merchant account, setting up payment methods, and configuring your integration settings.\n\n```bash copy\npsychoroid setup\n```\n\n`psychoroid test`\n\n\nThe `test` command allows you to test your payment integration by simulating transactions and verifying that your integration is working as expected.\n\n```bash copy\npsychoroid test\n```\n\n`psychoroid transactions`\n\n\nThe `transactions` command allows you to view and manage your transactions. You can list recent transactions, view transaction details, and perform actions such as refunds or captures.\n\n```bash copy\npsychoroid transactions list\npsychoroid transactions view \npsychoroid transactions refund \npsychoroid transactions capture \n```\n\n    ### `psychoroid webhooks`\n\nThe `webhooks` command allows you to manage your webhooks. You can list your registered webhooks, create new webhooks, and delete existing webhooks.\n\n```bash copy\npsychoroid webhooks list\npsychoroid webhooks create --url  --events \npsychoroid webhooks delete \n```\n\nSupport\n\n\nIf you encounter any issues or have any questions or feedback, please contact our support team at [dev@psychoroid.com](mailto:dev@psychoroid.com) or visit our [documentation]( for more information.\n",
-    "parentName": "lomi-cli",
-    "path": "lomi-cli/overview"
+    "parentName": "psychoroid-cli",
+    "path": "psychoroid-cli/overview"
   }
 }
