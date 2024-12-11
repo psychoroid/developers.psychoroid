@@ -5,7 +5,7 @@ import { SidebarTitle } from "@/components/sidebar-title";
 const themeConfig = {
   useNextSeoProps() {
     return {
-      titleTemplate: "%s – lomi. Docs",
+      titleTemplate: "%s – psychoroid.com Docs",
       additionalLinkTags: [
         {
           href: "/11.png",
@@ -32,7 +32,7 @@ const themeConfig = {
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta property="og:title" content="lomi. Docs" />
+      <meta property="og:title" content="psychoroid.com Docs" />
       <meta property="og:description" content="Open-source payment orchestration platform for West-Africa" />
     </>
   ),

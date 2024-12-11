@@ -8,7 +8,7 @@ To use an idempotency key, include it in the `Idempotency-Key` header of your AP
 
 ```bash
 curl -X POST \
-  https://api.lomi.africa/v1/payments \
+  https://api.psychoroid.comafrica/v1/payments \
   -H 'Authorization: Bearer your_api_key' \
   -H 'Idempotency-Key: unique_key_for_this_request' \
   -d '{
@@ -22,7 +22,7 @@ curl -X POST \
   }'
 ```
 
-If you make multiple requests with the same idempotency key, lomi. will process the request only once and return the same response for subsequent requests.
+If you make multiple requests with the same idempotency key, psychoroid.com will process the request only once and return the same response for subsequent requests.
 
 ## Generating Idempotency Keys
 

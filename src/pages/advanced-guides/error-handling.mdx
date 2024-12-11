@@ -1,10 +1,10 @@
 # Error Handling
 
-When integrating with lomi., it's essential to handle errors gracefully to provide a smooth payment experience for your customers. lomi. returns meaningful error codes and messages that you can use to troubleshoot issues and inform your customers about the status of their transactions.
+When integrating with psychoroid.com, it's essential to handle errors gracefully to provide a smooth payment experience for your customers. psychoroid.com returns meaningful error codes and messages that you can use to troubleshoot issues and inform your customers about the status of their transactions.
 
 ## Error Response Format
 
-When an error occurs, lomi. returns an HTTP status code in the 4xx or 5xx range, along with a JSON payload containing more details about the error. The error response format looks like this:
+When an error occurs, psychoroid.com returns an HTTP status code in the 4xx or 5xx range, along with a JSON payload containing more details about the error. The error response format looks like this:
 
 ```json
 {
@@ -21,23 +21,23 @@ When an error occurs, lomi. returns an HTTP status code in the 4xx or 5xx range,
 
 ## Common Error Codes
 
-Here are some common error codes you might encounter when working with lomi.:
+Here are some common error codes you might encounter when working with psychoroid.com:
 
 - `authentication_error`: The API key or authentication token is invalid or missing.
 - `invalid_request_error`: The request is missing required parameters or has invalid values.
 - `payment_method_error`: The specified payment method is invalid or not supported.
 - `transaction_declined`: The payment transaction was declined by the payment provider.
-- `server_error`: An unexpected error occurred on the lomi. server.
+- `server_error`: An unexpected error occurred on the psychoroid.com server.
 
-For a complete list of error codes and their meanings, refer to the [lomi. API documentation](https://docs.lomi.africa/api-reference/errors).
+For a complete list of error codes and their meanings, refer to the [psychoroid.com API documentation](https://docs.psychoroid.comafrica/api-reference/errors).
 
 ## Handling Errors in Your Code
 
-When making requests to the lomi. API, check the response status code and handle errors accordingly. Here's an example of handling errors in JavaScript:
+When making requests to the psychoroid.com API, check the response status code and handle errors accordingly. Here's an example of handling errors in JavaScript:
 
 ```javascript
 try {
-  const response = await axios.post('https://api.lomi.africa/v1/payments', {
+  const response = await axios.post('https://api.psychoroid.comafrica/v1/payments', {
     // Payment request payload
   });
 
@@ -62,6 +62,6 @@ try {
 - Log errors for debugging and monitoring purposes
 - Retry failed requests with exponential backoff to handle transient issues
 - Use idempotency keys to avoid duplicate transactions in case of retries
-- Keep your integration code up-to-date with the latest lomi. API version and error codes
+- Keep your integration code up-to-date with the latest psychoroid.com API version and error codes
 
 By properly handling errors, you can ensure a smooth payment experience for your customers and quickly troubleshoot any issues that arise. 

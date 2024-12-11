@@ -1,10 +1,10 @@
 # Handling Webhooks
 
-Webhooks allow you to receive real-time notifications from lomi. about events related to your payment transactions. By configuring webhooks, you can keep your system in sync with lomi. and react to payment events as they occur.
+Webhooks allow you to receive real-time notifications from psychoroid.com about events related to your payment transactions. By configuring webhooks, you can keep your system in sync with psychoroid.com and react to payment events as they occur.
 
 ## Configuring Webhooks
 
-1. Log in to your lomi. dashboard and navigate to the "Webhooks" section.
+1. Log in to your psychoroid.com dashboard and navigate to the "Webhooks" section.
 2. Click on the "Add Webhook" button.
 3. Enter the URL where you want to receive the webhook notifications.
 4. Select the events you want to subscribe to (e.g., payment.success, payment.failed).
@@ -12,7 +12,7 @@ Webhooks allow you to receive real-time notifications from lomi. about events re
 
 ## Verifying Webhook Signatures
 
-To ensure the authenticity of webhook requests, lomi. signs each request with a secret key. You should verify the signature to confirm that the request originated from lomi..
+To ensure the authenticity of webhook requests, psychoroid.com signs each request with a secret key. You should verify the signature to confirm that the request originated from psychoroid.com.
 
 Here's an example of how to verify the webhook signature in Node.js:
 
@@ -66,4 +66,4 @@ app.post('/webhooks', (req, res) => {
 - Use idempotency keys to handle duplicate events
 - Keep your webhook endpoint secure and accessible
 
-By properly handling webhooks, you can keep your system synchronized with lomi. and provide a seamless payment experience for your customers. 
+By properly handling webhooks, you can keep your system synchronized with psychoroid.com and provide a seamless payment experience for your customers. 

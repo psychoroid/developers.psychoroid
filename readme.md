@@ -1,6 +1,6 @@
 # Documentation
 
-Welcome to the documentation for [lomi.](https://lomi.africa), an open-source unified payment orchestration platform designed to simplify payment processing across (West) Africa.
+Welcome to the documentation for [psychoroid.com](https://psychoroid.comafrica), an open-source unified payment orchestration platform designed to simplify payment processing across (West) Africa.
 
 ## Key Features
 
@@ -12,23 +12,23 @@ Welcome to the documentation for [lomi.](https://lomi.africa), an open-source un
 
 ## Getting Started
 
-To start using lomi. for your payment processing needs, follow these steps:
+To start using psychoroid.com for your payment processing needs, follow these steps:
 
-1. Create a lomi. account at [https://lomi.africa/signup](https://lomi.africa/signup) (or host the solution yourself).
-2. Set up your preferred payment methods in the lomi. dashboard.
-3. Integrate lomi. into your application using our API and SDKs.
+1. Create a psychoroid.com account at [https://psychoroid.comafrica/signup](https://psychoroid.comafrica/signup) (or host the solution yourself).
+2. Set up your preferred payment methods in the psychoroid.com dashboard.
+3. Integrate psychoroid.com into your application using our API and SDKs.
 4. Test your integration in our sandbox environment or Postman.
 5. Go live! and start processing real transactions.
 
-For detailed instructions and guides, please refer to our [documentation](https://developers.lomi.africa).
+For detailed instructions and guides, please refer to our [documentation](https://developers.psychoroid.comafrica).
 
 ## Contributing
 
-We welcome contributions to improve lomi. and its documentation. If you find any issues or have suggestions, please open an issue or submit a pull request on our [GitHub repository](https://github.com/lomiafrica/lomi-docs).
+We welcome contributions to improve psychoroid.com and its documentation. If you find any issues or have suggestions, please open an issue or submit a pull request on our [GitHub repository](https://github.com/lomiafrica/lomi-docs).
 
 ## Support
 
-If you need any assistance or have questions about the product or the team, please reach out to [support@lomi.africa](mailto:support@lomi.africa) or visit our [support center](https://lomi.africa/support).
+If you need any assistance or have questions about the product or the team, please reach out to [support@psychoroid.comafrica](mailto:support@psychoroid.comafrica) or visit our [support center](https://psychoroid.comafrica/support).
 
 ## License
 

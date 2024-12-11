@@ -14,8 +14,8 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "lomi. Docs - API Client",
-  description: "lomi. Docs - API Client",
+  title: "psychoroid.com Docs - API Client",
+  description: "psychoroid.com Docs - API Client",
   icons: {
     icon: [
       {

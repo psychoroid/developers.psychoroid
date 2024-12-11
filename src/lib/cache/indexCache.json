@@ -3,8 +3,8 @@
     "name": "Introduction",
     "children": [
       {
-        "name": "What is lomi.?",
-        "path": "introduction/what-is-lomi"
+        "name": "What is psychoroid.com?",
+        "path": "introduction/what-is-psychoroid"
       },
       {
         "name": "Manifesto",
@@ -21,24 +21,7 @@
     "children": [
       {
         "name": "Basics",
-        "children": [
-          {
-            "name": "Sign Up",
-            "path": "get-started/lomi-basics/sign-up"
-          },
-          {
-            "name": "Create a Merchant Account",
-            "path": "get-started/lomi-basics/create-merchant-account"
-          },
-          {
-            "name": "Set Up Payment Methods",
-            "path": "get-started/lomi-basics/setup-payment-methods"
-          },
-          {
-            "name": "Process Transactions",
-            "path": "get-started/lomi-basics/process-transactions"
-          }
-        ]
+        "path": "get-started/lomi-basics"
       },
       {
         "name": "Variables",
@@ -93,7 +76,7 @@
     ]
   },
   {
-    "name": "lomi. with CLI",
+    "name": "psychoroid.com with CLI",
     "children": [
       {
         "name": "Overview",

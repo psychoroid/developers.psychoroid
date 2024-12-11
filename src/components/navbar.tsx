@@ -20,13 +20,13 @@ export const Navbar = () => {
               <div className="flex items-center">
                 <Image
                   src="/lomi-icon.png"
-                  alt="lomi. Logo"
+                  alt="psychoroid.com Logo"
                   height={35}
                   width={35}
                   className="h-6 w-6 sm:h-10 mr-2 sm:w-10"
                 />
                 <Typography variant="h3" className="ml-1">
-                  lomi.
+                  psychoroid.com
                 </Typography>
               </div>
             </Link>

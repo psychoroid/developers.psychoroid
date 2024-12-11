@@ -10,7 +10,8 @@
     "lint": "next lint",
     "format": "prettier --check .",
     "format:fix": "prettier --write --list-different .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "cache:clean": "rm -rf src/lib/cache/*"
   },
   "dependencies": {
     "@monaco-editor/react": "^4.6.0",
@@ -33,8 +34,8 @@
     "monaco-editor": "^0.49.0",
     "next": "^14.2.16",
     "next-themes": "^0.3.0",
-    "nextra": "^2.13.3",
-    "nextra-theme-docs": "^2.13.3",
+    "nextra": "^3.2.5",
+    "nextra-theme-docs": "^3.2.5",
     "react": "^18",
     "react-dom": "^18",
     "react-resizable-panels": "^2.0.19",
