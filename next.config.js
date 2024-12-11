@@ -1,18 +1,12 @@
-import nextra from 'nextra';
-
-const withNextra = nextra({
+const withNextra = require('nextra')({
   theme: 'nextra-theme-docs',
   themeConfig: './src/theme.config.tsx',
-  defaultShowCopyCode: true,
-  flexsearch: {
-    codeblocks: true
-  },
-  staticImage: true
+  defaultShowCopyCode: true
 });
 
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
+  swcMinify: true
 };
 
-export default withNextra(nextConfig);
+module.exports = withNextra(nextConfig);
