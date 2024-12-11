@@ -2,6 +2,7 @@
   "name": "developers.psychoroid.com",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,6 +12,7 @@
     "format": "prettier --check .",
     "format:fix": "prettier --write --list-different .",
     "prepare": "husky",
+    "postinstall": "node ./scripts/fix-imports.js",
     "cache:clean": "rm -rf src/lib/cache/*"
   },
   "dependencies": {
