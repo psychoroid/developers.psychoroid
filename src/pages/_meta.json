@@ -2,7 +2,7 @@
   "introduction": "Introduction",
   "get-started": "Getting Started",
   "git-integration": "Integration",
-  "lomi-cli": "psychoroid.com with CLI",
+  "psychoroid-cli": "psychoroid.com with CLI",
   "license-management": "License",
   "advanced-guides": "Advanced Guides"
 }

@@ -9,7 +9,7 @@ This makes it easier to manage your payment integrations, test your setup in dif
 To install the psychoroid.com CLI, use the package manager of your choice, such as NPM:
 
 ```bash copy
-npm install -g @lomi/cli
+npm install -g @psychoroid/cli
 ```
 
 ## Authentication
@@ -17,52 +17,52 @@ npm install -g @lomi/cli
 To use the psychoroid.com CLI, you need to authenticate with your psychoroid.com account. You can do this by setting the `LOMI_API_KEY` environment variable to your API key:
 
 ```bash copy
-export LOMI_API_KEY=your_api_key_here
+export PSYCHOROID_API_KEY=your_api_key_here
 ```
 
 Alternatively, you can pass the API key as a command-line argument using the `--api-key` flag:
 
 ```bash copy
-lomi --api-key your_api_key_here command
+psychoroid --api-key your_api_key_here command
 ```
 
 ## Commands
 
-### `lomi setup`
+### `psychoroid setup`
 
 The `setup` command helps you set up your psychoroid.com integration by guiding you through the process of creating a merchant account, setting up payment methods, and configuring your integration settings.
 
 ```bash copy
-lomi setup
+psychoroid setup
 ```
 
-### `lomi test`
+### `psychoroid test`
 
 The `test` command allows you to test your payment integration by simulating transactions and verifying that your integration is working as expected.
 
 ```bash copy
-lomi test
+psychoroid test
 ```
 
-### `lomi transactions`
+### `psychoroid transactions`
 
 The `transactions` command allows you to view and manage your transactions. You can list recent transactions, view transaction details, and perform actions such as refunds or captures.
 
 ```bash copy
-lomi transactions list
-lomi transactions view <transaction_id>
-lomi transactions refund <transaction_id>
-lomi transactions capture <transaction_id>
+psychoroid transactions list
+psychoroid transactions view <transaction_id>
+psychoroid transactions refund <transaction_id>
+psychoroid transactions capture <transaction_id>
 ```
 
-### `lomi webhooks`
+    ### `psychoroid webhooks`
 
 The `webhooks` command allows you to manage your webhooks. You can list your registered webhooks, create new webhooks, and delete existing webhooks.
 
 ```bash copy
-lomi webhooks list
-lomi webhooks create --url <webhook_url> --events <comma_separated_events>
-lomi webhooks delete <webhook_id>
+psychoroid webhooks list
+psychoroid webhooks create --url <webhook_url> --events <comma_separated_events>
+psychoroid webhooks delete <webhook_id>
 ```
 
 ## Support

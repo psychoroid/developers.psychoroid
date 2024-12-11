@@ -8,13 +8,13 @@ const themeConfig = {
       titleTemplate: "%s – psychoroid.com Docs",
       additionalLinkTags: [
         {
-          href: "/11.png",
+          href: "/psychoroid.png",
           rel: "icon",
           sizes: "32x32",
           type: "image/png",
         },
         {
-          href: "/11.png",
+          href: "/psychoroid.png",
           rel: "apple-touch-icon",
           sizes: "32x32",
           type: "image/png",

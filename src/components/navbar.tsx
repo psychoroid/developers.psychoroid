@@ -19,7 +19,7 @@ export const Navbar = () => {
             <Link href="/">
               <div className="flex items-center">
                 <Image
-                  src="/lomi-icon.png"
+                  src="/max.png"
                   alt="psychoroid.com Logo"
                   height={35}
                   width={35}

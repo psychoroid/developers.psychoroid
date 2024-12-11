@@ -21,7 +21,24 @@
     "children": [
       {
         "name": "Basics",
-        "path": "get-started/lomi-basics"
+        "children": [
+          {
+            "name": "Sign Up",
+            "path": "get-started/psychoroid-basics/sign-up"
+          },
+          {
+            "name": "Create a Merchant Account",
+            "path": "get-started/psychoroid-basics/create-merchant-account"
+          },
+          {
+            "name": "Set Up Payment Methods",
+            "path": "get-started/psychoroid-basics/setup-payment-methods"
+          },
+          {
+            "name": "Process Transactions",
+            "path": "get-started/psychoroid-basics/process-transactions"
+          }
+        ]
       },
       {
         "name": "Variables",
@@ -77,12 +94,7 @@
   },
   {
     "name": "psychoroid.com with CLI",
-    "children": [
-      {
-        "name": "Overview",
-        "path": "lomi-cli/overview"
-      }
-    ]
+    "path": "psychoroid-cli"
   },
   {
     "name": "License",
