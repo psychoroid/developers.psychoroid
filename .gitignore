@@ -39,3 +39,6 @@ yarn-error.log*
 next.config.js
 next.config.cjs
 !next.config.mjs
+
+# old meta files
+**/_meta.json

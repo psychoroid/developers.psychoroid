@@ -1,14 +1,9 @@
-import nextra from 'nextra';
+import createMDX from '@next/mdx';
 
-const withNextra = nextra({
-    theme: 'nextra-theme-docs',
-    themeConfig: './src/theme.config.tsx',
-    defaultShowCopyCode: true
+const withMDX = createMDX({
+    extension: /\.mdx?$/
 });
 
-const nextConfig = {
-    reactStrictMode: true,
-    swcMinify: true
-};
-
-export default withNextra(nextConfig); 
+export default withMDX({
+    pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx']
+}); 
