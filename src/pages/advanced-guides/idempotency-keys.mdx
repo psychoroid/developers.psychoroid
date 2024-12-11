@@ -8,7 +8,7 @@ To use an idempotency key, include it in the `Idempotency-Key` header of your AP
 
 ```bash
 curl -X POST \
-  https://api.psychoroid.comafrica/v1/payments \
+  https://api.psychoroid.com/v1/payments \
   -H 'Authorization: Bearer your_api_key' \
   -H 'Idempotency-Key: unique_key_for_this_request' \
   -d '{

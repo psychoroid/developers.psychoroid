@@ -35,7 +35,7 @@ export const Navbar = () => {
         <div className="flex items-center">
           <CommandMenuTrigger className="mr-1 sm:mr-3" />
           <Button variant="ghost" className="px-1 sm:px-2" asChild>
-            <Link href="https://github.com/lomiafrica/lomi-docs" target="_blank">
+            <Link href="https://github.com/psychoroid/developers.psychoroid" target="_blank">
               <Github className="h-5 w-5" />
             </Link>
           </Button>

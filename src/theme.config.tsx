@@ -23,12 +23,12 @@ const themeConfig = {
     };
   },
   project: {
-    link: "https://github.com/lomiafrica/lomi-docs",
+    link: "https://github.com/psychoroid/developers.psychoroid",
   },
   chat: {
-    link: "https://github.com/lomiafrica/lomi-docs",
+    link: "https://github.com/psychoroid/developers.psychoroid",
   },
-  docsRepositoryBase: "https://github.com/lomiafrica/lomi-docs/tree/main",
+  docsRepositoryBase: "https://github.com/psychoroid/developers.psychoroid/tree/main",
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />

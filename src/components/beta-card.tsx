@@ -19,7 +19,7 @@ const GithubLink = () => (
     asChild
     className="inline-flex py-0.5 px-1 h-fit ml-2 text-xs"
   >
-    <Link href="https://github.com/lomiafrica/lomi-docs" target="_blank">
+    <Link href="https://github.com/psychoroid/developers.psychoroid" target="_blank">
       GitHub
     </Link>
   </Button>
