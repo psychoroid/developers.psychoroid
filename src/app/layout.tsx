@@ -39,9 +39,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://developers.psychoroid.com',
-    title: 'psychoroid.com Developer Documentation',
+    title: 'psychoroid.com | Developer Documentation',
     description: 'Enterprise-grade 3D asset creation and distribution platform for e-commerce, gaming, manufacturing, and architectural visualization',
-    siteName: 'psychoroid.com | Developer docs',
+    siteName: 'psychoroid.com | Developer Documentation',
     images: [{
       url: '/og-image.png',
       width: 1200,
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'psychoroid.com Developer Documentation',
+    title: 'psychoroid.com | Developer Documentation',
     description: 'Enterprise-grade 3D asset creation and distribution platform for e-commerce, gaming, manufacturing, and architectural visualization',
     images: ['/og-image.png'],
     creator: '@psychoroid',
