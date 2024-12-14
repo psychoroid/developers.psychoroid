@@ -7,6 +7,10 @@
 # testing
 /coverage
 
+# cache
+/.mypy_cache
+/.husky
+
 # next.js
 /.next/
 /out/
